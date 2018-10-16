@@ -4,7 +4,7 @@ Requisitos:
 * NodeJS v5.2.0+
 
 ## Como executar
-Faça o clone/download deste repositório, execute `npm install` e `npx json-server db.json`.
+Faça o clone/download deste repositório, execute `npm install` e `npx json-server db.json`. A API fica localizada em `http://localhost:3000`.
 
 ## Rotas
 Todas as requisições de POST para esta API devem conter o header `Content-Type: application/json`.
