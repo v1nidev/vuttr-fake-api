@@ -14,6 +14,10 @@ Esta API contém as seguintes rotas:
 * `POST /tools` : cria uma nova ferramenta
 * `DELETE /tools/:id` : apaga a ferramenta com ID :id
 
+Para filtrar as ferramentas em `GET /tools`, é possível:
+* fazer uma busca global utilizando a query string `?q=:busca`;
+* fazer uma busca por tags individuais utilizando a query string `?tags_like=:busca`.
+
 ## Exemplos
 
 Requisição: 
@@ -36,6 +40,67 @@ Resposta:
             "calendar"
         ]
     },
+    {
+        id: 2,
+        title: "json-server",
+        link: "https://github.com/typicode/json-server",
+        description: "Fake REST API based on a json schema. Useful for mocking and creating APIs for front-end devs to consume in coding challenges.",
+        tags: [
+            "api",
+            "json",
+            "schema",
+            "node",
+            "github",
+            "rest"
+        ]
+    },
+    {
+        id: 3,
+        title: "fastify",
+        link: "https://www.fastify.io/",
+        description: "Extremely fast and simple, low-overhead web framework for NodeJS. Supports HTTP2.",
+        tags: [
+            "web",
+            "framework",
+            "node",
+            "http2",
+            "https",
+            "localhost"
+        ]
+    }
+]
+```
+
+Requisição: 
+```javascript
+GET /tools?q=notion
+```
+Resposta:
+```javascript
+[
+    {
+        id: 1,
+        title: "Notion",
+        link: "https://notion.so",
+        description: "All in one tool to organize teams and ideas. Write, plan, collaborate, and get organized. ",
+        tags: [
+            "organization",
+            "planning",
+            "collaboration",
+            "writing",
+            "calendar"
+        ]
+    }
+]
+```
+
+Requisição: 
+```javascript
+GET /tools?tags_like=node
+```
+Resposta:
+```javascript
+[
     {
         id: 2,
         title: "json-server",
