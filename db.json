@@ -51,18 +51,6 @@
         "such"
       ],
       "id": 5
-    },
-    {
-      "title": "test-tool",
-      "link": "https://google.com",
-      "description": "test-tool description wow",
-      "tags": [
-        "test",
-        "tool",
-        "wow",
-        "such"
-      ],
-      "id": 6
     }
   ]
 }
