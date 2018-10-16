@@ -71,6 +71,8 @@ Resposta:
 ]
 ```
 
+
+
 Requisição: 
 ```javascript
 GET /tools?q=notion
@@ -93,6 +95,8 @@ Resposta:
     }
 ]
 ```
+
+
 
 Requisição: 
 ```javascript
@@ -132,6 +136,8 @@ Resposta:
 ]
 ```
 
+
+
 Requisição:
 ```javascript
 // POST /tools
@@ -154,6 +160,8 @@ Resposta:
     "id":5
 }
 ```
+
+
 
 Requisição:
 ```javascript
