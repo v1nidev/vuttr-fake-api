@@ -20,6 +20,8 @@ Para filtrar as ferramentas em `GET /tools`, é possível:
 
 ## Exemplos
 
+### GET /tools
+
 Requisição: 
 ```javascript
 GET /tools
@@ -71,7 +73,7 @@ Resposta:
 ]
 ```
 
-
+### GET /tools?q=:busca
 
 Requisição: 
 ```javascript
@@ -96,7 +98,7 @@ Resposta:
 ]
 ```
 
-
+### GET /tools?tags_like=:busca
 
 Requisição: 
 ```javascript
@@ -136,7 +138,7 @@ Resposta:
 ]
 ```
 
-
+### POST /tools
 
 Requisição:
 ```javascript
@@ -161,8 +163,7 @@ Resposta:
 }
 ```
 
-
-
+### DELETE /tools/:id
 Requisição:
 ```javascript
 DELETE /tools/5
