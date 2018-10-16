@@ -69,9 +69,8 @@ Resposta:
 
 Requisição:
 ```javascript
-POST /tools
-Content-Type: application/json
-
+// POST /tools
+// Content-Type: application/json
 {
     "title": "hotel",
     "link": "https://github.com/typicode/hotel",
@@ -98,6 +97,6 @@ DELETE /tools/5
 
 Resposta:
 ```javascript
-//Status: 200 OK
+// Status: 200 OK
 {}
 ```
